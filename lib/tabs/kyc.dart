@@ -63,8 +63,15 @@ class kycpage extends State<kyc> with SingleTickerProviderStateMixin{
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Container(
-                    width: SizeConfig.screenWidth!/1.3,
+                    width: SizeConfig.screenWidth!/1.2,
                     child: TabBar(
+                      labelStyle:  TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 15,
+                        color: Colors.black,
+                        letterSpacing: 0,
+                        fontWeight:FontWeight.bold
+                    ),
                       unselectedLabelColor: Colors.black26,
                       labelColor: Colors.blue,
                       isScrollable: true,
@@ -73,7 +80,7 @@ class kycpage extends State<kyc> with SingleTickerProviderStateMixin{
                       indicatorWeight: 3.0,
                         indicatorColor: Colors.blue,
                       tabs: <Widget>[
-                        Tab(text: 'Details'),
+                        Tab(text: 'Details',),
                         Tab( text: "EMI Calendar"),
                         Tab( text: "Transactions"),
                       ]
