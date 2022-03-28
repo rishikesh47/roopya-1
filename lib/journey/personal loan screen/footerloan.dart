@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:roopya_banking_app/journey/dateofbirth/dateofbirth.dart';
 import 'package:roopya_banking_app/journey/genderselect/genderselect.dart';
 import 'package:roopya_banking_app/journey/personal%20loan%20screen/personal%20loan.dart';
 import 'package:roopya_banking_app/tabs/kyc.dart';
