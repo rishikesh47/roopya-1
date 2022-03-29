@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/reusable_widgets/header_widget.dart';
-
 import '../strings_and_colors/colors.dart';
 import '../strings_and_colors/constants.dart';
 import '../utils/size_config.dart';
@@ -33,13 +32,13 @@ class _ResidenceScreenState extends State<ResidenceScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(
-                        height: 25,
+                        height: 20,
                       ),
                       Text(
                         Constants.currentResidence,
                         style: TextStyle(
                             fontFamily: 'Roboto',
-                            fontSize: SizeConfig.screenHeight! * 0.045,
+                            fontSize: SizeConfig.screenHeight! * 0.024,
                             color: GlobalColors.apptheme,
                             fontWeight: FontWeight.bold),
                       ),

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:pinput/pin_put/pin_put.dart';
-import 'package:roopya_banking_app/strings_and_colors/colors.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import '../journey/verifymobile/verify otp.dart';
 import '../strings_and_colors/constants.dart';
@@ -52,6 +51,7 @@ class _onboarding1State extends State<onboarding1> {
       // ]
     );
   }
+
   // BoxDecoration get _pinPutDecoration1 {
   //   return BoxDecoration(
   //     border: Border.all(width: 2, color: Color(0xffC1BABA)),
@@ -102,7 +102,7 @@ class _onboarding1State extends State<onboarding1> {
             child: const Text(
               "Next",
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w200),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
             ),
             style: ElevatedButton.styleFrom(
               fixedSize: Size(
@@ -135,27 +135,36 @@ class _onboarding1State extends State<onboarding1> {
           alignment: Alignment.center,
           child: Column(
             children: [
-              SizedBox(height: 20),
+              Expanded(child: Container()),
               const Text(
                 Constants.verifymobilenumber,
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color: Colors.blue),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue),
               ),
               const Text(
                 Constants.verifyviaOTP,
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,color:Colors.blue),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue),
               ),
-              SizedBox(height:10),
-              const Text(Constants.verifyMobileSubText,style: TextStyle(color:Colors.grey),),
-              Expanded(child:Container()),
+              SizedBox(height: 10),
+              const Text(
+                Constants.verifyMobileSubText,
+                style: TextStyle(color: Colors.grey),
+              ),
+              Expanded(child: Container()),
               Container(
-                  width: SizeConfig.screenWidth! * 0.79,
+                  // width: SizeConfig.screenWidth! * 0.79,
                   color: Colors.transparent,
                   // margin: const EdgeInsets.all(20.0),
                   padding: EdgeInsets.only(
                       bottom: 0,
                       top: 0,
-                      left: SizeConfig.screenHeight! * 0.1,
-                      right: SizeConfig.screenHeight! * 0.1),
+                      left: SizeConfig.screenWidth! * 0.25,
+                      right: SizeConfig.screenWidth! * 0.25),
                   child: PinPut(
                     obscureText: ('\u{20B9}'),
                     fieldsCount: 4,
@@ -168,7 +177,7 @@ class _onboarding1State extends State<onboarding1> {
                     controller: _pinPutController,
                     submittedFieldDecoration: _pinPutDecoration,
                     // borderRadius: BorderRadius.circular(20.0),
-                    selectedFieldDecoration: _pinPutDecoration,
+                    // selectedFieldDecoration: _pinPutDecoration,
                     disabledDecoration: _pinPutDecoration,
                     followingFieldDecoration: _pinPutDecoration,
                     // borderRadius: BorderRadius.circular(5.0)
@@ -177,43 +186,48 @@ class _onboarding1State extends State<onboarding1> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                ElevatedButton(
-                  child: const Text(Constants.verifyOTPButton),
-                  style: ElevatedButton.styleFrom(
-                    onPrimary: Colors.white,
-                    primary: Colors.blue,
+                  ElevatedButton(
+                    child: const Text(Constants.verifyOTPButton),
+                    style: ElevatedButton.styleFrom(
+                      onPrimary: Colors.white,
+                      primary: Colors.blue,
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
                   ),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                ),
-                SizedBox(width:10),
-                ElevatedButton(
-                  child: const Text(Constants.resendbutton),
-                  style: ElevatedButton.styleFrom(
-                    onPrimary: Colors.white,
-                    primary: Colors.grey,
+                  SizedBox(width: 10),
+                  ElevatedButton(
+                    child: const Text(Constants.resendbutton),
+                    style: ElevatedButton.styleFrom(
+                      onPrimary: Colors.white,
+                      primary: Colors.grey,
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
                   ),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                ),
-              ],),
-              Expanded(child:Container()),
+                ],
+              ),
+              Expanded(child: Container()),
               ElevatedButton(
                 onPressed: () {
                   // Get.to(FirstPolicy()),
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>verificationotp()),
+                    MaterialPageRoute(builder: (context) => verificationotp()),
                   );
                 },
                 child: const Text(
                   "Next",
-                  style: TextStyle(color: Colors.white ,fontWeight: FontWeight.w200 ),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold),
                 ),
                 style: ElevatedButton.styleFrom(
-                  fixedSize: Size(SizeConfig.screenWidth!*1,SizeConfig.screenHeight!*0.08),
+                  fixedSize: Size(SizeConfig.screenWidth! * 1,
+                      SizeConfig.screenHeight! * 0.08),
                   primary: Colors.lightBlue,
                   elevation: 0,
                   shadowColor: Colors.black87,

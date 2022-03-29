@@ -40,7 +40,7 @@ class _FooterResidenceState extends State<FooterResidence> {
             child: const Text(
               "Next",
               style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.w200),
+                  TextStyle(color: Colors.white,fontSize: 15, fontWeight: FontWeight.bold),
             ),
             style: ElevatedButton.styleFrom(
               fixedSize: Size(
