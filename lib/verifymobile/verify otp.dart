@@ -169,7 +169,6 @@ class _verificationotpState extends State<verificationotp> {
                     SizedBox(
                       height: SizeConfig.screenHeight! * 0.02,
                     ),
-
                     Material(
                       elevation: 0,
                       child: Padding(

@@ -10,23 +10,13 @@ import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import '../../utils/size_config.dart';
 
-
-
-
-
-
-
-
-
 class footerloan2 extends StatefulWidget {
-
 
   @override
   _footerloan2State createState() => _footerloan2State();
 }
 
 class _footerloan2State extends State<footerloan2> {
-
 
   @override
   Widget build(BuildContext context) {

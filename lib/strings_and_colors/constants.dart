@@ -12,6 +12,7 @@ class Constants {
   static const pinSuccess1 = "Hurry !";
   static const pinSuccess2 = "Successfully Verified Your Number";
   static const userDetailTitle = "Enter your some\ndetails";
+  static const currentResidence = "Your Current Residence without movements";
   static const userDetailSubTitle = "Let's get you on board";
   static const userName = "Enter Your Name";
   static const PANNumber = "Enter Your PAN Number";
@@ -40,7 +41,8 @@ class Constants {
   static const parentname = "Your parents name";
   static const employmenttype = "Select Your Employment Type";
   static const currentaddress = "What Is Your Current \nAddress";
-  static const verifymobilenumber = "Let's verify your mobile \nnumber via OTP";
+  static const verifymobilenumber = "Let's verify your mobile";
+  static const verifyviaOTP = "number via OTP";
   static const verifyMobileSubText = "Reference site about Lorem Ipsum";
   static const verifyOTPButton = "Verify OTP";
   static const resendbutton = "Resend";

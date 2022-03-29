@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/enterdetails/user_details_screen.dart';
 import 'package:roopya_banking_app/enterjobdetails/userjobdetails_screen.dart';
 
+import '../residence/residence_screen.dart';
+
 
 
 
@@ -38,7 +40,7 @@ class _userBottomContentState extends State<userBottomContent> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => UserjobDetails()),
+                      MaterialPageRoute(builder: (context) => ResidenceScreen()),
                     );// Get.to(FirstPolicy()),
                     // Navigator.push(
                     //   context,
