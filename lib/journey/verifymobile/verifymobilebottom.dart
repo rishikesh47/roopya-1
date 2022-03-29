@@ -4,15 +4,6 @@ import 'package:roopya_banking_app/utils/size_config.dart';
 import 'package:roopya_banking_app/verifymobile/verify%20otp.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-
-
-
-
-
-
-
-
-
 class onboarding1 extends StatefulWidget {
   // final  PageController _pageController ;
   // onboarding1(this._pageController);
@@ -37,8 +28,6 @@ class _onboarding1State extends State<onboarding1> {
   //   super.dispose();
   // }
 
-
-
   @override
   Widget build(BuildContext context) {
     Color getColor(Set<MaterialState> states) {
@@ -55,7 +44,7 @@ class _onboarding1State extends State<onboarding1> {
 
     return Container(
       height: SizeConfig.screenHeight!*0.08,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           color: Colors.blue
       ),
       child: Column(

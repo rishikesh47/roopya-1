@@ -3,29 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/enterdetails/user_details_screen.dart';
 import 'package:roopya_banking_app/verifymobile/verify%20otp.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-
 import '../../utils/size_config.dart';
-
-
-
-
-
-
-
-
-
 
 class sliderbottom extends StatefulWidget {
   // final  PageController _pageController ;
   // onboarding1(this._pageController);
-
 
   @override
   _sliderbottomState createState() => _sliderbottomState();
 }
 
 class _sliderbottomState extends State<sliderbottom> {
-
 
   // @override
   // void initState() {
@@ -38,8 +26,6 @@ class _sliderbottomState extends State<sliderbottom> {
   //   _pageController.dispose();
   //   super.dispose();
   // }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +60,6 @@ class _sliderbottomState extends State<sliderbottom> {
                 context,
                 MaterialPageRoute(builder: (context) => UserDetails()),
               );
-
             },
             child: const Text(
               "Next",

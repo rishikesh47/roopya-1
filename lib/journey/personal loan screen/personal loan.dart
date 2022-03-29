@@ -3,11 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/journey/personal%20loan%20screen/footerloan.dart';
 import 'package:roopya_banking_app/journey/personal%20loan%20screen/header.dart';
 import 'package:roopya_banking_app/utils/size_config.dart';
-
 import '../../strings_and_colors/colors.dart';
 import '../../strings_and_colors/constants.dart';
-
-
 
 class loanscreen extends StatefulWidget {
   const loanscreen({Key? key}) : super(key: key);

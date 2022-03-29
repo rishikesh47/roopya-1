@@ -40,5 +40,9 @@ class Constants {
   static const parentname = "Your parents name";
   static const employmenttype = "Select Your Employment Type";
   static const currentaddress = "What Is Your Current \nAddress";
+  static const verifymobilenumber = "Let's verify your mobile \nnumber via OTP";
+  static const verifyMobileSubText = "Reference site about Lorem Ipsum";
+  static const verifyOTPButton = "Verify OTP";
+  static const resendbutton = "Resend";
 
 }

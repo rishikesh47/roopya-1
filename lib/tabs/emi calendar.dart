@@ -190,7 +190,7 @@ class emistate extends State<emi> {
             ),
             SizedBox(
               height: SizeConfig.screenHeight!*0.1,
-            ),g
+            ),
           ]
       ),
       // const BottomContent()

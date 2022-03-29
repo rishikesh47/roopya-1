@@ -3,15 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/enterdetails/user_details_screen.dart';
 import 'package:roopya_banking_app/verifymobile/verify%20otp.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
-
 import '../utils/size_config.dart';
-
-
-
-
-
-
-
 
 class sliderbottom extends StatefulWidget {
   // final  PageController _pageController ;

@@ -5,13 +5,6 @@ import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import '../utils/size_config.dart';
 
-
-
-
-
-
-
-
 class verifyotpbottom extends StatefulWidget {
   // final  PageController _pageController ;
   // onboarding1(this._pageController);
@@ -38,8 +31,6 @@ class _verifyotpbottomState extends State<verifyotpbottom> {
   //   super.dispose();
   // }
 
-
-
   @override
   Widget build(BuildContext context) {
     Color getColor(Set<MaterialState> states) {
@@ -56,7 +47,7 @@ class _verifyotpbottomState extends State<verifyotpbottom> {
 
     return Container(
       height: SizeConfig.screenHeight!*0.08,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           color: Colors.blue
       ),
       child: Column(
@@ -73,7 +64,6 @@ class _verifyotpbottomState extends State<verifyotpbottom> {
               //   context,
               //   MaterialPageRoute(builder: (context) => verificationotp()),
               // );
-
             },
             child: const Text(
               "Next",

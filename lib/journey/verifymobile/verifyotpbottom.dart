@@ -4,15 +4,6 @@ import 'package:roopya_banking_app/utils/size_config.dart';
 import 'package:roopya_banking_app/verifymobile/verify%20otp.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
-
-
-
-
-
-
-
-
-
 class verifyotpbottom extends StatefulWidget {
   // final  PageController _pageController ;
   // onboarding1(this._pageController);
@@ -57,7 +48,7 @@ class _verifyotpbottomState extends State<verifyotpbottom> {
 
     return Container(
       height: SizeConfig.screenHeight!*0.08,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           color: Colors.blue
       ),
       child: Column(
