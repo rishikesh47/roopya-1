@@ -1,14 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:roopya_banking_app/reusable_widgets/header_widget.dart';
 import 'package:roopya_banking_app/strings_and_colors/colors.dart';
 import 'package:roopya_banking_app/strings_and_colors/constants.dart';
 import 'package:roopya_banking_app/utils/size_config.dart';
 import 'package:roopya_banking_app/verifymobile/sliderbottom.dart';
-import 'package:roopya_banking_app/verifymobile/verification.dart';
-import 'package:roopya_banking_app/verifymobile/verifymobilebottom.dart';
 import 'package:roopya_banking_app/verifymobile/verifyotpbottom.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import 'package:pinput/pin_put/pin_put.dart';
@@ -86,8 +83,7 @@ class _verificationotpState extends State<verificationotp> {
                           left: SizeConfig.screenHeight! * 0.02),
                       child: RichText(
                         text: TextSpan(
-                          text: Constants.verifypin,
-                          style: TextStyle(
+                          text: Constants.verifypin, style: TextStyle(
                               fontFamily: 'Roboto',
                               fontSize: 21.0,
                               color: GlobalColors.apptheme,
@@ -172,7 +168,7 @@ class _verificationotpState extends State<verificationotp> {
                     child: Padding(
                       padding: EdgeInsets.only(
                           left: SizeConfig.screenHeight! * 0.02),
-                      child: Text(
+                      child: const Text(
                         Constants.otpnotget,
                         textAlign: TextAlign.center,
                         style: TextStyle(

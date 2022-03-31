@@ -40,8 +40,6 @@ class _ListTileReusableState extends State<ListTileReusable> {
         ),
         // trailing: Icon(Icons.done),
         subtitle:widget.textField,
-
-
         // Text(widget.subTitleText),
         // selected: true,
         onTap: () {

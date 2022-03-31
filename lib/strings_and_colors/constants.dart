@@ -19,13 +19,15 @@ class Constants {
   static const userjobDetailTitle = "Enter your job details";
   static const userjobpositionDetailTitle = "Enter your job position";
   static const userworkDetailTitle = "Your work details";
-  static const userworkSubDetailTitle = "Reference site about Lorem Ipsum, giving information on its origins";
-  static const userworkEmployeeStatus = "Your work details \nwith Designation";
-  static const userworkEmployeeSubStatus= "Reference site about Lorem Ipsum ";
+  static const userworkSubDetailTitle =
+      "Reference site about Lorem Ipsum, giving information on its origins";
+  static const userworkEmployeeStatus = "Your work details with Designation";
+  static const userworkEmployeeSubStatus = "Reference site about Lorem Ipsum ";
   static const companyname = "Enter your company name";
   static const aadharnotverified = "Can't verify Aadhaar ";
-  static const exception = "Title of the exception which can be max 70 charges ";
-  static const accountfound  = "Federal bank account found ";
+  static const exception =
+      "Title of the exception which can be max 70 charges ";
+  static const accountfound = "Federal bank account found ";
   static const accountnotopen = "Can't open your account";
   static const itnotyouitsus = "It's not you,It's us ";
   static const genderselect = "Please select your gender ";
@@ -46,9 +48,13 @@ class Constants {
   static const verifyMobileSubText = "Reference site about Lorem Ipsum";
   static const verifyOTPButton = "Verify OTP";
   static const resendbutton = "Resend";
-  static const personalLoanTitle="Get the best experience with these permissions";
-  static const personalLoanSMS="Helps understand your financial profile";
-  static const personalLoanContacts="To Identify fraud within networks of contacts";
-  static const personalLoanLocation="To check Loan serviceability in your area";
-  static const personalLoanDevice="Register your device as a trusted device";
-  }
+  static const personalLoanTitle =
+      "Get the best experience with these permissions";
+  static const personalLoanSMS = "Helps understand your financial profile";
+  static const personalLoanContacts =
+      "To Identify fraud within networks of contacts";
+  static const personalLoanLocation =
+      "To check Loan serviceability in your area";
+  static const personalLoanDevice = "Register your device as a trusted device";
+  static const personalLoanText = "Personal Loan";
+}
