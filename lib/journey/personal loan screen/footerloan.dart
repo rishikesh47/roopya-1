@@ -1,13 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/RECHARGE/recharge.dart';
-import 'package:roopya_banking_app/journey/dateofbirth/dateofbirth.dart';
-import 'package:roopya_banking_app/journey/genderselect/genderselect.dart';
-import 'package:roopya_banking_app/journey/personal%20loan%20screen/personal%20loan.dart';
-import 'package:roopya_banking_app/tabs/kyc.dart';
-
-import 'package:sliding_up_panel/sliding_up_panel.dart';
-
 import '../../utils/size_config.dart';
 
 class footerloan2 extends StatefulWidget {
@@ -34,7 +27,7 @@ class _footerloan2State extends State<footerloan2> {
 
     return Container(
       height: SizeConfig.screenHeight!*0.08,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.blue
       ),
         child: Column(
@@ -42,9 +35,13 @@ class _footerloan2State extends State<footerloan2> {
                 ElevatedButton(
                 onPressed: () {
                   // Get.to(FirstPolicy()),
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(builder: (context) => const recharge()),
+                  // );
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => recharge()),
+                    MaterialPageRoute(builder: (context) => const recharge()),
                   );
                 },
                 child: const Text(

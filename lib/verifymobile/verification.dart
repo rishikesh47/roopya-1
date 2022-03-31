@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/formatters/masked_input_formatter.dart';
 import 'package:roopya_banking_app/utils/size_config.dart';
 import 'package:roopya_banking_app/verifymobile/verifymobilebottom.dart';
-
 import '../strings_and_colors/colors.dart';
 import '../strings_and_colors/constants.dart';
 import 'package:get_storage/get_storage.dart';

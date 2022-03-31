@@ -46,5 +46,9 @@ class Constants {
   static const verifyMobileSubText = "Reference site about Lorem Ipsum";
   static const verifyOTPButton = "Verify OTP";
   static const resendbutton = "Resend";
-
-}
+  static const personalLoanTitle="Get the best experience with these permissions";
+  static const personalLoanSMS="Helps understand your financial profile";
+  static const personalLoanContacts="To Identify fraud within networks of contacts";
+  static const personalLoanLocation="To check Loan serviceability in your area";
+  static const personalLoanDevice="Register your device as a trusted device";
+  }

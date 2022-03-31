@@ -4,6 +4,8 @@ import 'package:roopya_banking_app/enterdetails/user_details_screen.dart';
 import 'package:roopya_banking_app/enterjobdetails/userjobdetails_screen.dart';
 import 'package:roopya_banking_app/loancalculate/loan%20main.dart';
 
+import '../journey/personal_loan/personal_loan.dart';
+
 
 
 
@@ -37,10 +39,14 @@ class _loadingbottom1State extends State<loadingbottom1> {
             children: [
                  ElevatedButton(
                   onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => loancalculate()),
+                    // );// Get.to(FirstPolicy()),
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => loancalculate()),
-                    );// Get.to(FirstPolicy()),
+                      MaterialPageRoute(builder: (context) => PersonalLoanScreen()),
+                    );
                     // Navigator.push(
                     //   context,
                     //   MaterialPageRoute(builder: (context) => const FirstPolicy()),

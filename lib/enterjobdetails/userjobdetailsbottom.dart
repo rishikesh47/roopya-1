@@ -40,7 +40,6 @@ class _userjobBottomContentState extends State<userjobBottomContent> {
     return SizedBox(
         child: Container(
           child: Column(
-
             children: [
               ElevatedButton(
                   onPressed: () {

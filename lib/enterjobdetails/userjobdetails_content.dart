@@ -36,6 +36,7 @@ class _UserjobDetailsContentState extends State<UserjobDetailsContent> {
     // _myActivity = '';
     // _myActivityResult = '';
   }
+
   void _onDropDownItemSelected(BankListDataModel newSelectedBank) {
     setState(() {
       _bankChoose = newSelectedBank;

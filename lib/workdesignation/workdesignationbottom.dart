@@ -6,13 +6,6 @@ import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import '../utils/size_config.dart';
 
-
-
-
-
-
-
-
 class onboarding11 extends StatefulWidget {
   // final  PageController _pageController ;
   // onboarding1(this._pageController);
@@ -37,8 +30,6 @@ class _onboarding11State extends State<onboarding11> {
   //   super.dispose();
   // }
 
-
-
   @override
   Widget build(BuildContext context) {
     Color getColor(Set<MaterialState> states) {
@@ -54,10 +45,8 @@ class _onboarding11State extends State<onboarding11> {
     }
 
     return Container(
-      height: SizeConfig.screenHeight!*0.08,
-      decoration: BoxDecoration(
-          color: Colors.blue
-      ),
+      height: SizeConfig.screenHeight! * 0.08,
+      decoration: BoxDecoration(color: Colors.blue),
       child: Column(
         children: [
           ElevatedButton(
@@ -71,14 +60,15 @@ class _onboarding11State extends State<onboarding11> {
                 context,
                 MaterialPageRoute(builder: (context) => loader()),
               );
-
             },
             child: const Text(
               "Next",
-              style: TextStyle(color: Colors.white ,fontWeight: FontWeight.w200 ),
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.w200),
             ),
             style: ElevatedButton.styleFrom(
-              fixedSize: Size(SizeConfig.screenWidth!,SizeConfig.screenHeight!*0.08),
+              fixedSize: Size(
+                  SizeConfig.screenWidth!, SizeConfig.screenHeight! * 0.08),
               primary: Colors.lightBlue,
               elevation: 0,
               shadowColor: Colors.black87,

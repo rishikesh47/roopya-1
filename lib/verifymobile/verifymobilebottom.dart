@@ -4,6 +4,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:pinput/pin_put/pin_put.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import '../journey/verifymobile/verify otp.dart';
+import '../strings_and_colors/colors.dart';
 import '../strings_and_colors/constants.dart';
 import '../utils/size_config.dart';
 
@@ -139,14 +140,14 @@ class _onboarding1State extends State<onboarding1> {
               const Text(
                 Constants.verifymobilenumber,
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 21,
                     fontWeight: FontWeight.bold,
                     color: Colors.blue),
               ),
               const Text(
                 Constants.verifyviaOTP,
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 21,
                     fontWeight: FontWeight.bold,
                     color: Colors.blue),
               ),
@@ -187,8 +188,14 @@ class _onboarding1State extends State<onboarding1> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                    child: const Text(Constants.verifyOTPButton),
+                    child: const Text(Constants.verifyOTPButton,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.w700)),
                     style: ElevatedButton.styleFrom(
+                      shadowColor: GlobalColors.mildblack,
+                      fixedSize: const Size(100, 47),
+                      // minimumSize: const Size(35, 45),
                       onPrimary: Colors.white,
                       primary: Colors.blue,
                     ),
@@ -196,11 +203,21 @@ class _onboarding1State extends State<onboarding1> {
                       Navigator.of(context).pop();
                     },
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   ElevatedButton(
-                    child: const Text(Constants.resendbutton),
+                    child: const Text(Constants.resendbutton,
+                        style: TextStyle(
+                            color: GlobalColors.darkBlue,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700)),
                     style: ElevatedButton.styleFrom(
-                      onPrimary: Colors.white,
+                      side: BorderSide(
+                        width: 2.0,
+                        color: GlobalColors.mediumBlue,
+                      ),
+                      fixedSize: const Size(100, 47),
+                      // minimumSize: const Size(35, 45),
+                      onPrimary: Colors.black,
                       primary: Colors.grey,
                     ),
                     onPressed: () {

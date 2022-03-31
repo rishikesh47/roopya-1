@@ -1,31 +1,30 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:roopya_banking_app/strings_and_colors/colors.dart';
 
-ButtonTheme ReusableRaisedButton(
-    {required VoidCallback onClick,
-    required String text,
-             bool?  obscureText = false,
-    required Color textColor,
-    required Color color,
-    required Color splashColor,
-    required double borderRadius,
-    required double minWidth,
-    required double height,
-    required Color borderSideColor,
-    required TextStyle style,
-      required BuildContext context,
-    required Widget leadingIcon,
-    // required Widget trailingIcon
-    }) {
+ButtonTheme ReusableRaisedButton({
+  required VoidCallback onClick,
+  required String text,
+  bool? obscureText = false,
+  required Color textColor,
+  required Color color,
+  required Color splashColor,
+  required double borderRadius,
+  required double minWidth,
+  required double height,
+  required Color borderSideColor,
+  required TextStyle style,
+  required BuildContext context,
+  required Widget leadingIcon,
+  // required Widget trailingIcon
+}) {
   ;
   return ButtonTheme(
     minWidth: minWidth,
     height: height,
     child: Container(
       width: MediaQuery.of(context).size.width,
-      margin: EdgeInsets.only(left: 30,right: 30,bottom: 20),
+      margin: EdgeInsets.only(left: 30, right: 30, bottom: 20),
       height: 50,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
