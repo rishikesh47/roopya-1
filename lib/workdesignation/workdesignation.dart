@@ -61,126 +61,126 @@ class _workdesignationState extends State<workdesignation> {
               ),
             ),
             Expanded(child: Container()),
-            Container(
-              child: Padding(
-                padding: EdgeInsets.only(left: SizeConfig.screenWidth! * 0.04),
-                child: Row(
-                  children: [
-                    Container(
-                        width: 110,
-                        height: 50,
-                        child: Stack(children: <Widget>[
-                          Positioned(
-                              top: 0,
-                              left: 60,
-                              child: Container(
-                                  width: 50,
-                                  height: 50,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(26),
-                                      topRight: Radius.circular(26),
-                                      bottomLeft: Radius.circular(26),
-                                      bottomRight: Radius.circular(26),
-                                    ),
-                                    border: Border.all(
-                                      color: Color.fromRGBO(255, 255, 255, 1),
-                                      width: 2,
-                                    ),
-                                    image: DecorationImage(
-                                        image: AssetImage('assets/GUY1.png'),
-                                        fit: BoxFit.fitWidth),
-                                  ))),
-                          Positioned(
-                              top: 0,
-                              left: 30,
-                              child: Container(
-                                  width: 50,
-                                  height: 50,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(26),
-                                      topRight: Radius.circular(26),
-                                      bottomLeft: Radius.circular(26),
-                                      bottomRight: Radius.circular(26),
-                                    ),
-                                    border: Border.all(
-                                      color: Color.fromRGBO(255, 255, 255, 1),
-                                      width: 2,
-                                    ),
-                                    image: DecorationImage(
-                                        image: AssetImage('assets/GUY2.png'),
-                                        fit: BoxFit.fitWidth),
-                                  ))),
-                          Positioned(
-                              top: 0,
-                              left: 0,
-                              child: Container(
-                                  width: 50,
-                                  height: 50,
-                                  decoration: BoxDecoration(
-                                    borderRadius: const BorderRadius.only(
-                                      topLeft: Radius.circular(26),
-                                      topRight: Radius.circular(26),
-                                      bottomLeft: Radius.circular(26),
-                                      bottomRight: Radius.circular(26),
-                                    ),
-                                    border: Border.all(
-                                      color: Color.fromRGBO(255, 255, 255, 1),
-                                      width: 2,
-                                    ),
-                                    image: DecorationImage(
-                                        image: AssetImage('assets/GIRL.png'),
-                                        fit: BoxFit.fitWidth),
-                                  ))),
-                        ])),
-                    // CircleAvatar(child: Image.asset('assets/GUY2.png'),backgroundColor: Color(0xff0F9AFF).withOpacity(0.3), radius: SizeConfig.screenHeight!*0.03,),
-                    Spacer(),
-                    Padding(
-                      padding: EdgeInsets.only(
-                          right: SizeConfig.screenWidth! * 0.04),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        width: SizeConfig.screenWidth! * 0.25,
-                        child: ElevatedButton(
-                          onPressed: () {
-                            // _pageController.nextPage(
-                            //   duration: Duration(milliseconds: 200),
-                            //   curve: Curves.linear,
-                            // );
-                            // Get.to(FirstPolicy()),
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(builder: (context) => verificationotp()),
-                            // );
-                          },
-                          child: const Text(
-                            "Read more",
-                            style: TextStyle(
-                                color: Color(0xff0F9AFF),
-                                fontWeight: FontWeight.w200),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                            fixedSize: Size(SizeConfig.screenWidth!,
-                                SizeConfig.screenHeight! * 0.06),
-                            primary: Color(0xff0F9AFF).withOpacity(0.3),
-                            elevation: 0,
-                            shadowColor: Colors.black87,
-                            // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))
-                          ),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            ),
-            Expanded(child: Container()),
+            // Container(
+            //   child: Padding(
+            //     padding: EdgeInsets.only(left: SizeConfig.screenWidth! * 0.04),
+            //     child: Row(
+            //       children: [
+            //         Container(
+            //             width: 110,
+            //             height: 50,
+            //             child: Stack(children: <Widget>[
+            //               Positioned(
+            //                   top: 0,
+            //                   left: 60,
+            //                   child: Container(
+            //                       width: 50,
+            //                       height: 50,
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.only(
+            //                           topLeft: Radius.circular(26),
+            //                           topRight: Radius.circular(26),
+            //                           bottomLeft: Radius.circular(26),
+            //                           bottomRight: Radius.circular(26),
+            //                         ),
+            //                         border: Border.all(
+            //                           color: Color.fromRGBO(255, 255, 255, 1),
+            //                           width: 2,
+            //                         ),
+            //                         image: DecorationImage(
+            //                             image: AssetImage('assets/GUY1.png'),
+            //                             fit: BoxFit.fitWidth),
+            //                       ))),
+            //               Positioned(
+            //                   top: 0,
+            //                   left: 30,
+            //                   child: Container(
+            //                       width: 50,
+            //                       height: 50,
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.only(
+            //                           topLeft: Radius.circular(26),
+            //                           topRight: Radius.circular(26),
+            //                           bottomLeft: Radius.circular(26),
+            //                           bottomRight: Radius.circular(26),
+            //                         ),
+            //                         border: Border.all(
+            //                           color: Color.fromRGBO(255, 255, 255, 1),
+            //                           width: 2,
+            //                         ),
+            //                         image: DecorationImage(
+            //                             image: AssetImage('assets/GUY2.png'),
+            //                             fit: BoxFit.fitWidth),
+            //                       ))),
+            //               Positioned(
+            //                   top: 0,
+            //                   left: 0,
+            //                   child: Container(
+            //                       width: 50,
+            //                       height: 50,
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: const BorderRadius.only(
+            //                           topLeft: Radius.circular(26),
+            //                           topRight: Radius.circular(26),
+            //                           bottomLeft: Radius.circular(26),
+            //                           bottomRight: Radius.circular(26),
+            //                         ),
+            //                         border: Border.all(
+            //                           color: Color.fromRGBO(255, 255, 255, 1),
+            //                           width: 2,
+            //                         ),
+            //                         image: DecorationImage(
+            //                             image: AssetImage('assets/GIRL.png'),
+            //                             fit: BoxFit.fitWidth),
+            //                       ))),
+            //             ])),
+            //         // CircleAvatar(child: Image.asset('assets/GUY2.png'),backgroundColor: Color(0xff0F9AFF).withOpacity(0.3), radius: SizeConfig.screenHeight!*0.03,),
+            //         Spacer(),
+            //         Padding(
+            //           padding: EdgeInsets.only(
+            //               right: SizeConfig.screenWidth! * 0.04),
+            //           child: Container(
+            //             decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //             ),
+            //             width: SizeConfig.screenWidth! * 0.25,
+            //             child: ElevatedButton(
+            //               onPressed: () {
+            //                 // _pageController.nextPage(
+            //                 //   duration: Duration(milliseconds: 200),
+            //                 //   curve: Curves.linear,
+            //                 // );
+            //                 // Get.to(FirstPolicy()),
+            //                 // Navigator.push(
+            //                 //   context,
+            //                 //   MaterialPageRoute(builder: (context) => verificationotp()),
+            //                 // );
+            //               },
+            //               child: const Text(
+            //                 "Read more",
+            //                 style: TextStyle(
+            //                     color: Color(0xff0F9AFF),
+            //                     fontWeight: FontWeight.w200),
+            //               ),
+            //               style: ElevatedButton.styleFrom(
+            //                 shape: RoundedRectangleBorder(
+            //                   borderRadius: BorderRadius.circular(25),
+            //                 ),
+            //                 fixedSize: Size(SizeConfig.screenWidth!,
+            //                     SizeConfig.screenHeight! * 0.06),
+            //                 primary: Color(0xff0F9AFF).withOpacity(0.3),
+            //                 elevation: 0,
+            //                 shadowColor: Colors.black87,
+            //                 // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))
+            //               ),
+            //             ),
+            //           ),
+            //         )
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // Expanded(child: Container()),
             Container(
               child: Padding(
                 padding: EdgeInsets.only(left: SizeConfig.screenWidth! * 0.04),
